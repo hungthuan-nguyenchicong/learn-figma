@@ -1,0 +1,35 @@
+---
+// 1. Khu vực chạy trên server (import component React)
+// import Header from '../components/Header.jsx';
+// import Footer from '../components/Footer.jsx';
+---
+
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang Astro của tôi</title>
+    <!-- CSS / SCSS được Vite quản lý tự động -->
+    <link rel="stylesheet" href="../styles/main.scss" />
+  </head>
+  <body>
+    <!-- React component render ra HTML thuần tại đây -->
+    <!-- <Header /> -->
+
+    <main>
+      <h1>Nội dung tĩnh chuẩn SEO</h1>
+      <button id="test">Bấm vào đây để test Vanilla JS</button>
+    </main>
+
+    <!-- <Footer /> -->
+
+    <!-- 2. Vanilla JS thuần túy tương tác trực tiếp với DOM có sẵn -->
+    <script>
+      const btn = document.getElementById("test");
+      if (btn) {
+        btn.addEventListener("click", () => {
+          console.log("Chạy mượt mà, không bao giờ lo lỗi null!");
+        });
+      }
+    </script>
+  </body>
+</html>

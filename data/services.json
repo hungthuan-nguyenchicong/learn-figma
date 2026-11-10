@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Thiết kế Web Doanh Nghiệp",
+        "price": "5.000.000đ",
+        "features": [
+            "Giao diện chuẩn SEO, tương thích mobile",
+            "Tích hợp hệ thống quản trị dễ sử dụng",
+            "Bảo hành vĩnh viễn mã nguồn"
+        ]
+    },
+    {
+        "title": "Thiết kế Web Thương Mại Điện Tử",
+        "price": "9.000.000đ",
+        "features": [
+            "Giỏ hàng, thanh toán trực tuyến",
+            "Quản lý sản phẩm, đơn hàng thông minh",
+            "Tối ưu tốc độ tải trang cực nhanh"
+        ]
+    }
+]

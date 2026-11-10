@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "/*": [
+                "public/*"
+            ]
+        }
+    },
+    "include": [
+        "src/**/*",
+        "public/**/*",
+        "*.js"
+    ]
+}

@@ -1,0 +1,23 @@
+<div class="col">
+    <div class="card h-100 border-0 shadow-sm">
+        <!-- Header bảng giá -->
+        <div class="card-header text-white text-center py-4 {{themeClass}}">
+            <h4 class="fw-bold">{{title}}</h4>
+            <p class="mb-0">{{subtitle}}</p>
+        </div>
+
+        <!-- Giá tiền -->
+        <div class="card-body text-center bg-light py-3">
+            <del class="text-muted d-block">{{oldPrice}}</del>
+            <h3 class="text-danger fw-bold mb-0">{{newPrice}}</h3>
+        </div>
+
+        <!-- Danh sách tính năng (Lặp qua mảng features) -->
+        <ul class="list-group list-group-flush text-center">
+            <!-- Plugin sẽ tự động render các thẻ li từ mảng features -->
+            {{foreach features}}
+            <li class="list-group-item py-3">{{this}}</li>
+            {{endforeach}}
+        </ul>
+    </div>
+</div>

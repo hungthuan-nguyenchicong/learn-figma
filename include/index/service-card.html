@@ -1,0 +1,22 @@
+<div class="col-md-6 mb-4">
+    <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+            <h4 class="fw-bold text-primary">{{ title }}</h4>
+            <h5 class="text-danger mb-3">{{ price }}</h5>
+
+            <ul class="list-group list-group-flush mb-3">
+                <!-- Vòng lặp foreach hỗ trợ linh hoạt khoảng trắng -->
+                {{ foreach features }}
+                <li class="list-group-item py-2">
+                    <i class="text-success me-2">✓</i> {{ this }}
+                </li>
+                {{ endforeach }}
+            </ul>
+
+            <!-- Ví dụ chèn nội dung vào slot nếu muốn -->
+            <div class="mt-auto">
+                <a href="#lien-he" class="btn btn-outline-primary w-100">Đăng ký ngay</a>
+            </div>
+        </div>
+    </div>
+</div>
