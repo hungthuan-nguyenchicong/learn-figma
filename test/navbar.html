@@ -1,0 +1,12 @@
+<nav class="{{ className }}">
+    <h2>{{ title }}</h2>
+    <ul>
+        {{foreach feature}}
+        <li><a href="#">{{this}}</a></li>
+        {{endforeach}}
+    </ul>
+
+    <div class="slot-container">
+        {{ slot }}
+    </div>
+</nav>

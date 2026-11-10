@@ -1,0 +1,26 @@
+{
+    "pageTitle": "Menu Hướng Dẫn (JSON)",
+    "simpleList": [
+        "Trang chủ",
+        "Giới thiệu",
+        "Sản phẩm",
+        "Liên hệ"
+    ],
+    "nestedList": [
+        {
+            "name": "Frontend",
+            "link": "/frontend",
+            "desc": "HTML, CSS, JS, Vite"
+        },
+        {
+            "name": "Backend",
+            "link": "/backend",
+            "desc": "NodeJS, PHP, MySQL"
+        },
+        {
+            "name": "DevOps",
+            "link": "/devops",
+            "desc": "Docker, Linux, Nginx"
+        }
+    ]
+}

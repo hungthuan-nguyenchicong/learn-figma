@@ -1,0 +1,26 @@
+<div class="demo-box p-4 border rounded shadow-sm">
+    <h2 class="text-xl font-bold mb-3">{{ pageTitle }}</h2>
+
+    <!-- 1. TEST MẢNG ĐƠN (Dùng {{this}} hoặc {{value}}) -->
+    <div class="mb-4">
+        <h4 class="font-semibold text-blue-600">-- Mảng đơn (Simple List) --</h4>
+        <ul class="list-disc pl-5">
+            {{foreach simpleList}}
+            <li>{{this}}</li>
+            {{endforeach}}
+        </ul>
+    </div>
+
+    <!-- 2. TEST MẢNG 2 CHIỀU / OBJECT (Dùng key, value hoặc thuộc tính trực tiếp) -->
+    <div>
+        <h4 class="font-semibold text-green-600">-- Mảng 2 chiều / Object (Nested List) --</h4>
+        <div class="grid gap-2 mt-2">
+            {{foreach nestedList}}
+            <div class="p-2 bg-gray-50 border rounded">
+                <a href="{{ link }}" class="text-blue-500 font-bold">{{ name }}</a>
+                <p class="text-sm text-gray-600">{{ desc }}</p>
+            </div>
+            {{endforeach}}
+        </div>
+    </div>
+</div>

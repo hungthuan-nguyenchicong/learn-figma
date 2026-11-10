@@ -1,0 +1,20 @@
+<div class="card p-4 border rounded-xl shadow-sm bg-white relative">
+
+    <!-- Hiển thị badge giảm giá nếu isSale = true -->
+    {{#if isSale}}
+    <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-1 rounded-full font-bold">
+        {{ saleText }}
+    </span>
+    {{endif}}
+
+    <h3 class="text-lg font-bold text-gray-800">{{ title }}</h3>
+    <p class="text-blue-600 font-semibold my-2">{{ price }}</p>
+
+    <!-- Hiển thị nút mua hàng nếu showButton = true -->
+    {{#if showButton}}
+    <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+        {{ buttonText }}
+    </button>
+    {{endif}}
+
+</div>

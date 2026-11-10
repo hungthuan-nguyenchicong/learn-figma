@@ -1,0 +1,12 @@
+<div class="banner-card {{ className }}">
+    <h2>{{ title }}</h2>
+    <p>{{ description }}</p>
+
+    <ul class="feature-list">
+        {{foreach features}}
+        <li>✔ {{this}}</li>
+        {{endforeach}}
+    </ul>
+
+    <button class="btn-primary">{{ buttonText }}</button>
+</div>

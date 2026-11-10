@@ -1,0 +1,46 @@
+<style>
+    .text-red {
+        color: red;
+    }
+
+    .text-blue {
+        color: blue;
+    }
+</style>
+<h1>layout test</h1>
+<include src="/test/include-resolve.html" className="text-red" />
+<include src="/test/slot.html" className="text-blue">
+    <p>noi dung slot</p>
+</include>
+{{slot}}
+<include src="/test/data-inline.html" data="title: Ung dung; des: viết cái gì đó;" />
+<include src="/test/navbar.html" data-file="/test/src/data/menu.js" className="navbar-custom">
+    <p>Nội dung này được truyền vào vị trí của navbar!</p>
+</include>
+<include src="/test/banner.html" data-json="/test/src/data/banner.json" className="bg-blue-100 p-6 rounded-xl" />
+<include src="/test/nested-menu.html" data="title: Thực đơn chính; categories: [Món chính; Món khai vị; Tráng miệng]" />
+<include src="/test/menu.html"
+    data-json='{"links": {"home": "Trang chủ", "about": "Giới thiệu", "contact": "Liên hệ"}}' />
+
+<div class="container mx-auto p-6 space-y-6">
+
+    <!-- Test với data-json -->
+    <section>
+        <h3 class="text-lg font-bold mb-2">1. Test với data-json:</h3>
+        <include src="/test/demo-component.html" data-json="/test/src/data/menu.json" />
+    </section>
+
+    <hr class="my-4">
+
+    <!-- Test với data-file (.js) -->
+    <section>
+        <h3 class="text-lg font-bold mb-2">2. Test với data-file (.js):</h3>
+        <include src="/test/demo-component.html" data-file="/test/src/data/menu.js" />
+    </section>
+
+</div>
+
+<div class="container mx-auto p-8 max-w-sm">
+    <!-- Include component sản phẩm với dữ liệu từ JSON -->
+    <include src="/test/product-card.html" data-json="/test/src/data/product.json" />
+</div>
